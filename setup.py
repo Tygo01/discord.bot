@@ -27,7 +27,9 @@ packages = [
 ]
 
 # This project uses semantic versioning, see https://semver.org/
+#
 # https://pypi.org/classifiers/
+#
 # Development Status :: 1 - Planning
 # Development Status :: 2 - Pre-Alpha
 # Development Status :: 3 - Alpha
@@ -35,6 +37,12 @@ packages = [
 # Development Status :: 5 - Production/Stable
 # Development Status :: 6 - Mature
 # Development Status :: 7 - Inactive
+
+#* Build using 'py -m build'
+#*
+#* Publish by installing twine ( pip install --user --upgrade twine )
+#* and running ( twine upload dist/* ) in the project directory.
+#! This uploads to PyPI, not TestPyPI ^^^
 
 setup(
     name='discord.bot',
@@ -47,7 +55,7 @@ setup(
     version=VERSION,
     packages=packages,
     license='GPL-3.0',
-    description='An API wrapper for discord bots, written in python.',
+    description='An API wrapper for discord bots.',
     long_description=README + '\n\n' + HISTORY,
     long_description_content_type='text/x-rst',
     include_package_data=True,

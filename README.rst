@@ -1,4 +1,4 @@
 discord.bot
 ===========
 
-README.rst
+An API wrapper for discord bots.
