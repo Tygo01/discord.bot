@@ -11,3 +11,5 @@ __license__ = 'GPL-3.0'
 __version__ = '0.1.0'
 
 #! Add logging!!!
+
+from .client import Client
